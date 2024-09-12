@@ -20,37 +20,43 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 function App() {
   const cards = [
     {
-      url: "Budget Tracker",
+      url: "https://github.com/marcosmorenodev/ReactBudgetTracker",
+      title: "Budget Tracker",
       svg: finances,
       description: "Administre sus finanzas como un profesional con esta app.",
       id: 1
     },
     {
-      url: "Japanese Alphabet Learning Flashcards",
+      url: "https://github.com/marcosmorenodev/ReactJPFlashcards",
+      title: "Japanese Alphabet Learning Flashcards",
       svg: japanese,
       description: "Aprenda mediante flashcards interactivas.",
       id: 2
     },
     {
-      url: "Pomodoro Timer",
+      url: "https://github.com/marcosmorenodev/PomodoroTimerJS",
+      title: "Pomodoro Timer",
       svg: pomodoro,
       description: "Administre mejor su tiempo con esta app.",
       id: 3
     },
     {
-      url: "Simple Calculator",
+      url: "https://github.com/marcosmorenodev/SimpleCalcJS",
+      title: "Simple Calculator",
       svg: calculator,
       description: "Realize operaciones básicas, así de sencillo.",
       id: 4
     },
     {
-      url: "Quotes Generator",
+      url: "https://github.com/marcosmorenodev/QuotesGeneratorJS",
+      title: "Quotes Generator",
       svg: quotes,
       description: "Genere una frase aleatoria de entre multiples categorías para su vida diaria.",
       id: 5
     },
     {
-      url: "QR Code Generator",
+      url: "https://github.com/marcosmorenodev/QRCodeGeneratorJS",
+      title: "QR Code Generator",
       svg: qrCode,
       description: "Cree sus codigos QR listos para imprimir o pegar en algún documento.",
       id: 6
@@ -86,8 +92,8 @@ function App() {
       </div>
 
 
-      <div className='w-full text-center bg-black text-white border-b-4 border-t-4 border-blue-400 p-2 shadow-md shadow-gray-300 lg:p3'>
-        <h1 className="text-3xl font-semibold lg:text-4xl">Acerca de Mi</h1>
+      <div className='w-full text-center bg-black text-white border-b-4 border-t-4 border-blue-400 shadow-md shadow-gray-300'>
+        <h1 className="text-3xl font-semibold lg:text-4xl py-4">Acerca de Mi</h1>
       </div>
 
       <div className='flex justify-between items-center w-full px-2'>
@@ -107,8 +113,8 @@ function App() {
         </div>
       </div>
 
-      <div className='w-full text-center bg-white text-black border-b-4 border-t-4 border-blue-400 p-2 lg:p-3'>
-        <h1 className="text-3xl font-semibold lg:text-4xl">Mis Proyectos</h1>
+      <div className='w-full text-center bg-white text-black border-b-4 border-t-4 border-blue-400'>
+        <h1 className="text-3xl font-semibold lg:text-4xl py-4">Mis Proyectos</h1>
       </div>
 
       <div className='bg-black w-full flex justify-between items-center px-2'>
@@ -129,7 +135,7 @@ function App() {
 
       <div className='w-full gap-1.5 px-3 bg-black'>
         <p
-          className='text-white text-xl text-center font-bold rounded-md transition-all underline underline-offset-2 p-2 bg-gray-800 cursor-default'
+          className='text-white text-xl text-center font-bold rounded-md transition-all underline underline-offset-2 p-2.5 bg-gray-800 cursor-default'
         >
           REACT & JAVASCRIPT
         </p>
@@ -157,7 +163,9 @@ function App() {
                   </div>
 
                   <div className='bg-blue-600 p-1 rounded-b-xl text-white w-full text-center sm:h-[145px] lg:h-[175px]'>
-                    <h1 className='my-1.5 font-medium cursor-pointer lg:text-2xl transition-all hover:underline hover:underline-offset-2 sm:text-lg md:text-xl'> {card.url} </h1>
+                    <a href={card.url} target="_blank">
+                      <h1 className='my-1.5 font-medium cursor-pointer lg:text-2xl transition-all hover:underline hover:underline-offset-2 sm:text-lg md:text-xl hover:text-fuchsia-300'> {card.title} </h1>
+                    </a>
 
                     <div className='p-1 h-full'>
                       <h1 className='my-0.5 sm:text-lg lg:text-2xl md:text-xl'> {card.description} </h1>
@@ -171,8 +179,8 @@ function App() {
         </Slider>
       </div>
 
-      <div className='w-full text-center bg-black text-white border-b-4 border-t-4 border-blue-400 p-2 shadow-md shadow-gray-300 lg:p-3'>
-        <h1 className="text-3xl font-semibold lg:text-4xl">¿Interesado/a? Contacte conmigo</h1>
+      <div className='w-full text-center bg-black text-white border-b-4 border-t-4 border-blue-400 shadow-md shadow-gray-300'>
+        <h1 className="text-3xl font-semibold lg:text-4xl py-4">¿Interesado/a? Contacte conmigo</h1>
       </div>
 
       <div className='grid grid-cols-3 gap-12 py-2.5 lg:my-12 sm:my-16'>
